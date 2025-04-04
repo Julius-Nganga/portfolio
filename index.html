@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julius Nganga Hinga - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-900">
+    <header class="bg-blue-700 text-white py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-2xl font-semibold">Julius Nganga Hinga</h1>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="hover:text-blue-200 transition duration-300">About</a></li>
+                    <li><a href="#skills" class="hover:text-blue-200 transition duration-300">Skills</a></li>
+                    <li><a href="#portfolio" class="hover:text-blue-200 transition duration-300">Portfolio</a></li>
+                    <li><a href="#contact" class="hover:text-blue-200 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="hamburger-btn" class="md:hidden text-white focus:outline-none" aria-label="Toggle Navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-90 z-50">
+        <div class="bg-gray-800 w-80 h-full absolute right-0 p-6">
+            <div class="flex justify-end mb-4">
+                <button id="close-menu-btn" class="text-white focus:outline-none" aria-label="Close Menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <nav class="block">
+                <ul class="space-y-4">
+                    <li><a href="#about" class="block text-lg text-white hover:text-blue-200 transition duration-300">About</a></li>
+                    <li><a href="#skills" class="block text-lg text-white hover:text-blue-200 transition duration-300">Skills</a></li>
+                    <li><a href="#portfolio" class="block text-lg text-white hover:text-blue-200 transition duration-300">Portfolio</a></li>
+                    <li><a href="#contact" class="block text-lg text-white hover:text-blue-200 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        <section id="hero" class="bg-gradient-to-br from-blue-800 to-purple-900 text-white py-20 text-center">
+            <div class="container mx-auto px-4">
+                <div class="hero-content">
+                    <h2 class="text-4xl font-bold mb-4">Hi, I'm Julius!</h2>
+                    <p class="text-xl mb-8">A passionate Web Designer, and Writer.</p>
+                    <a href="#portfolio" class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition duration-300 inline-block">View My Work</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="container mx-auto px-4 py-16">
+            <h2 class="text-3xl font-semibold text-gray-200 text-center mb-8">About Me</h2>
+            <div class="text-gray-300 text-lg">
+                <p class="mb-6">I am a versatile professional with a strong foundation in web design. My passion extends to writing, allowing me to approach projects with a holistic perspective. I am committed to creating innovative and effective solutions.</p>
+                <p class="mb-6">In my free time, I enjoy gaming, which fuels my creativity and problem-solving skills. This passion for gaming translates into my work, where I strive to create engaging and user-friendly experiences.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="bg-gray-800 py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-semibold text-white text-center mb-8">Skills</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-gray-700 rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-semibold text-blue-400 mb-4 text-white">Web Design</h3>
+                        <ul class="list-disc list-inside text-gray-300">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>Responsive Design</li>
+                            <li>UI/UX Principles</li>
+                            <li>Frameworks: React, Next.js</li>
+                            <li>Version Control (Git)</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-700 rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-semibold text-blue-400 mb-4 text-white">Front End Web Development</h3>
+                        <ul class="list-disc list-inside text-gray-300">
+                            <li>Proficient in HTML</li>
+                            <li>Proficient in  CSS</li>
+                            <li>Proficient in Javascript</li>
+                            <li>Web Frameworks</li>
+                            <li>API Interaction</li>
+                            <li>Version Control (Git)</li>
+                            <li>Testing and Debugging</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-700 rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-semibold text-blue-400 mb-4 text-white">Writing</h3>
+                        <ul class="list-disc list-inside text-gray-300">
+                            <li>Technical Writing</li>
+                            <li>Content Creation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="container mx-auto px-4 py-16">
+            <h2 class="text-3xl font-semibold text-gray-200 text-center mb-8">Portfolio</h2>
+            <div id="portfolio-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800 rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-blue-400 mb-2 text-white">Arianna1175 Project</h3>
+                    <p class="text-gray-300 mb-4">A showcase of a website built on the Hocoos platform, demonstrating responsive design and modern web development techniques.</p>
+                    <a href="https://arianna1175.hocoos.com" target="_blank" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline inline-block">View Live Site</a>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-blue-400 mb-2 text-white">Ned9425 Project</h3>
+                    <p class="text-gray-300 mb-4">A demonstration of web design capabilities using the Hocoos website builder, highlighting UI/UX principles.</p>
+                    <a href="https://ned9425.hocoos.com" target="_blank" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline inline-block">View Live Site</a>
+                </div>
+
+                </div>
+        </section>
+
+        <section id="contact" class="bg-blue-900 py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-semibold text-white text-center mb-8">Contact Me</h2>
+                <div class="bg-gray-800 rounded-lg shadow-md p-8 max-w-md mx-auto">
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-300 text-sm font-bold mb-2">Your Name</label>
+                            <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-gray-700 text-white" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-300 text-sm font-bold mb-2">Your Email</label>
+                            <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-gray-700 text-white" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-300 text-sm font-bold mb-2">Your Message</label>
+                            <textarea id="message" name="message" rows="5" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-gray-700 text-white"></textarea>
+                        </div>
+                        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-4 text-center">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2025 Julius Nganga Hinga. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Mobile menu functionality
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMenuBtn = document.getElementById('close-menu-btn');
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        const navLinks = document.querySelectorAll('header nav ul li a');
+
+
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        hamburgerBtn.addEventListener('click', toggleMobileMenu);
+        closeMenuBtn.addEventListener('click', toggleMobileMenu);
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', toggleMobileMenu);
+        });
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    e.preventDefault(); // Prevent default anchor behavior
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+
+                    // Close menu if it's open (for mobile)
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        toggleMobileMenu();
+                    }
+                }
+            });
+        });
+
+        // --- Portfolio Section ---
+        const portfolioGrid = document.getElementById('portfolio-grid');
+        // The portfolio items are now directly in the HTML, so we can comment out the JavaScript fetching
+        // if (portfolioGrid) {
+        //     // Function to fetch and display portfolio items
+        //     function fetchAndDisplayPortfolio() {
+        //         fetch('/api/projects') //  Corrected endpoint
+        //             .then(response => {
+        //                 if (!response.ok) {
+        //                     throw new Error(`HTTP error! Status: ${response.status}`);
+        //                 }
+        //                 return response.json();
+        //             })
+        //             .then(data => {
+        //                 portfolioGrid.innerHTML = ''; // Clear existing content
+        //                 data.forEach(item => {
+        //                     const portfolioItem = document.createElement('div');
+        //                     portfolioItem.classList.add('bg-gray-800', 'rounded-lg', 'shadow-md', 'p-6');
+        //                     portfolioItem.innerHTML = `
+        //                         <h3 class="text-xl font-semibold text-blue-400 mb-2 text-white">${item.title}</h3>
+        //                         <p class="text-gray-300 mb-4">${item.description}</p>
+        //                         <img src="${item.image}" alt="${item.title}" class="w-full h-auto rounded-md mb-4">
+        //                         <a href="${item.link}" target="_blank" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline inline-block">View Project</a>
+        //                     `;
+        //                     portfolioGrid.appendChild(portfolioItem);
+        //                 });
+        //             })
+        //             .catch(error => {
+        //                 console.error("Error fetching portfolio data:", error);
+        //                 portfolioGrid.innerHTML = `<p class="text-red-500">Failed to load portfolio items: ${error.message}</p>`;
+        //             });
+        //     }
+        //     fetchAndDisplayPortfolio(); // Initial fetch
+        // }
+
+        // --- Writing Section ---
+        // const writingList = document.getElementById('writing-list');
+        // if (writingList) {
+        //     function fetchAndDisplayWriting() {
+        //         fetch('/api/writings')
+        //         .then(response => {
+        //             if (!response.ok) {
+        //                 throw new Error(`HTTP error! status: ${response.status}`);
+        //             }
+        //             return response.json();
+        //         })
+        //         .then(data => {
+        //             writingList.innerHTML = '<p class="mb-4 text-gray-300">Here are some examples of my written work. I enjoy creating clear, concise, and engaging content.</p>';
+        //             data.forEach(item => {
+        //                 const writingItem = document.createElement('div');
+        //                 writingItem.classList.add('mb-4', 'p-4', 'bg-gray-800', 'rounded-lg', 'shadow-sm');
+        //                 writingItem.innerHTML = `
+        //                     <h4 class="text-lg font-semibold text-blue-400 text-white">${item.title}</h4>
+        //                     <p class="text-gray-300 mb-2">${item.description}</p>
+        //                     <a href="${item.link}" target="_blank" class="text-blue-300 hover:text-blue-400 hover:underline">Read More</a>
+        //                 `;
+        //                 writingList.appendChild(writingItem);
+        //             });
+        //         })
+        //         .catch(error => {
+        //             console.error("Error fetching writing samples", error);
+        //             writingList.innerHTML = `<p class="text-red-500">Failed to load writing samples: ${error.message}</p>`;
+        //         })
+        //     }
+        //     fetchAndDisplayWriting();
+        // }
+
+        // --- Contact Form Submission ---
+        const contactForm = document.getElementById('contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+
+                // Basic validation (you should have more robust validation on the server)
+                if (!name || !email || !message) {
+                    alert('Please fill in all fields.');
+                    return;
+                }
+
+                // Prepare data for sending
+                const formData = {
+                    name: name,
+                    email: email,
+                    message: message
+                };
+
+                // Send data to the server (replace '/api/contact' with your actual endpoint)
+                fetch('/api/contact', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! Status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    alert(data.message); // Show success/error message from the server
+                    if (data.success) {
+                        contactForm.reset(); // Clear the form on success
+                    }
+                })
+                .catch(error => {
+                    console.error("Error sending message:", error);
+                    alert('Failed to send message. Please try again later.');
+                });
+            });
+        }
+    });
+    </script>
+</body>
+</html>
